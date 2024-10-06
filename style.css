@@ -24,6 +24,11 @@ a:hover {
 }
 
 body {
+  width: 1920px;
+  height: 3036px;
+  top: -141.5px;
+  left: 286px;
+  opacity: 0px;
   margin: 0;
   display: flex;
   place-items: center;
