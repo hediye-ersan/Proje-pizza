@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Solid:wght@100;300;400;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Solid:wght@100;300;400;900&family=Quattrocento:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Londrina+Solid:wght@100;300;400;900&family=Quattrocento:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,6 +30,12 @@
   --text-white: white;
 
 }
+ .background {
+  background-color: var(--Koyu-Gri);
+ }
+ .backgroundwhite {
+  background-color: var(--text-white);
+ }
 
 /*
 a {
@@ -36,11 +47,31 @@ a:hover {
   color: #535bf2;
 }*/
 
+/*  * {
+    border: 1px solid lime;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+ 
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
 header {
   background-image: url("assets/iteration-1/home-banner.png");
   text-align: center;
-  background-size: cover;
-  height: 100vh;
+  
+  min-width: 1920px;
+  min-height: 1080px;
+  background-repeat: no-repeat;
+
+  
 }
 header h3 {
  padding: 2rem 0 2rem 0;
@@ -62,6 +93,7 @@ header h4 {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    font-size: 5rem;
 }
  
   header button {
@@ -74,13 +106,189 @@ header h4 {
 
   }
 
+  .items{
+    
+    display: flex;
+    justify-content: center;
+    background-color: var(--text-white);
+    min-width: 1920px;
+    min-height: 94px;
+    
+    
+    
+  }
+  .item {
+    
+    font-style: normal;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    
+    
+    
+  }
+  .item img {
+    width: 3rem;
+    height: 3rem;
+    
+    
+  }
+  .item h4{
+       
+    color: var(--text-black);
+    font-size: 1rem;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .border {
+    border-radius: 2rem;
+  }
+  .padding-item {
+    padding: 0 2rem 0 2rem;
+  }
+  .cards{
+    display: flex;
+    justify-content: center;
+    
+    
+    
+    
+
+  }
+  .card-1 {
+    background-image: url("/assets/iteration-2/cta/kart-1.png");
+    min-width: 530px;
+    min-height: 450px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 2rem ;
+    padding-top: 2rem;
+    border-radius: 1rem;
+
+  }
+  p {
+    font-size: 1rem;
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+  h2 span {
+    display: block; 
+    font-size: 4rem;
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+   .card-2 {
+    background-image: url("/assets/iteration-2/cta/kart-2.png");
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+  }
+  .card-3 {
+    background-image: url("/assets/iteration-2/cta/kart-3.png");
+    
+        
+    
+  }
+  .card-2, .card-3 {
+    
+    width: 530px;
+    min-height: 220px;
+    height: auto;
+    background-size: cover;
+    padding-left: 2rem ;
+    padding-top: 2rem;
+    border-radius: 1rem;
+  }
+  .right {
+    display: flex;
+    flex-direction: column; 
+    row-gap: 0.5rem;
+}
+
+.cards button {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--Kırmızı);
+  background-color: var(--text-white);
+  border-radius: 2rem;
+}
+.mini-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mini-text h4 {
+  font-size: 2rem;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--Kırmızı);
+}
+.Card {
+  display: flex;
+  justify-content: center;
+  color: var(--text-black);
+  font-family: 'Barlow';
+  column-gap: 2rem;
+  
+  
+}
+.Card img{
+  min-width: 270px;
+  min-height: 265px;
+}
+.flex {
+  display: flex;
+}
+footer{
+  width: 100%;
+  background-color:var(--text-black);
+  
+  
+  
+}
+ footer img {
+  width: 1.5rem;
+  height: 1.5rem;
+ }
+ .gap {
+  row-gap: 1rem;
+ }
+ .insta{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    
+ }
+ .insta img{
+  margin:0;
+  padding: 0;
+  min-width: 105px;
+  min-height: 95px;
+  width: 33%;
+  object-fit: contain;
+ }
 
 
+
+
+/*
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
+}*/
+/*
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -139,4 +347,43 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}*/
+ @media (max-width:768px){
+  body {
+    margin: 0; /* Varsayılan margin'i kaldır */
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    min-height: 100vh; /* Tam yükseklik */
+    text-align: center; /* Metni ortala */
+    background-color: #f0f0f0; /* Arka plan rengi (isteğe bağlı) */
 }
+
+header {
+    padding: 20px; /* İçerik için boşluk */
+}
+
+h3 {
+    margin: 0; /* Varsayılan üst ve alt boşlukları kaldır */
+}
+
+h4 {
+    margin: 10px 0; /* Üst ve alt boşluklar */
+}
+
+h1 {
+  display: flex;
+  flex-direction: column; /* Dikey yönde dizilim */
+  align-items: center; /* Ortalamak için */
+}
+
+h1 span {
+  display: block; /* Her kelimeyi ayrı bir blok yap */
+}
+
+button {
+    padding: 10px 20px; /* Buton için iç boşluk */
+    font-size: 1rem; /* Buton yazı boyutu */
+    cursor: pointer; /* İmleci göster */
+}
+ }

@@ -13,7 +13,7 @@
   <body>
       
     <header>
-      <div class="container">
+      <div>
       <h3>Teknolojik Yemekler</h3>
       <div>
         <h4>fırsatı kaçırma</h4>
@@ -24,10 +24,10 @@
     </header>
     
     
-    <div class="items">
+    <div class="items" style="gap: 4rem;">
 
       
-      <div><img src="./public/assets/iteration-2/icons/1.svg"/>
+        <div class="item"><img src="./public/assets/iteration-2/icons/1.svg"/>
         <h4>YENİ! Kore</h4></div>
 
         <div class="item"><img src="./public/assets/iteration-2/icons/2.svg"/>
@@ -48,85 +48,112 @@
       
       
     </div>
-        <div>
-     <div class="content">
-      <div class="container">
-        <h2>Özel Lezzetus</h2>
-        <p>Possition:Absolute Acı Burger</p>
+
+    <div class="menu" style="background-color: var(--Bej);">
+     <div class="cards">
+      <div class="card-1">
+        <h2> 
+          <span>Özel</span>
+          <span>Lezzetus</span></h2>
+          
+        <p style="font-family:'Barlow'; padding-top: 1rem;">Possition:Absolute Acı Burger</p>
         <button>SİPARİŞ VER</button>
       </div>
-      <div class="container">
-        <h3>Hackhathlon Burger Menü</h3>
+
+      <div class="right" style="font-family: 'Barlow'; font-size: 2rem;">
+      <div class="card-2" style="font-family: 'Barlow'; font-size: 2rem;">
+        <h3>Hackhathlon <br> Burger Menü</h3>
         <button>SİPARİŞ VER</button>
       </div>
-      <div class="container">
-        <h3>Çoooook hızlı npm gibi kurye</h3>
+
+      <div class="card-3" style="color: var(--text-black);">
+        <h3><span style="color: var(--Kırmızı);">Çoooook</span> hızlı <br> npm gibi kurye</h3>
         <button>SİPARİŞ VER</button>
-      </div></div> 
+      </div>
+    </div>
+  </div>
     
     <div class="mini-text">
         <h4>en çok paketlenen menüler</h4>
-        <h3>Acıktıran Kodlara Doyuran Lezzetler</h3>
+        <h3 style="font-family: 'Barlow'; font-size: 2.5rem; color: var(--text-black);">Acıktıran Kodlara Doyuran Lezzetler</h3>
     </div>
-      <div class="items">
-        <div class="item"><img src="./public/assets/iteration-2/icons/1.svg"/>
-          <h4>Ramen</h4></div>
-        <div class="item"><img src="./public/assets/iteration-2/icons/2.svg"/>
-          <h4>Pizza</h4></div>
-        <div class="item">
-          <img src="./public/assets/iteration-2/icons/3.svg"/>
-          <h4>Burger</h4></div>
-        <div class="item"><img src="./public/assets/iteration-2/icons/4.svg"/>
-          <h4>French fries</h4></div>
-        <div class="item"><img src="./public/assets/iteration-2/icons/5.svg"/>
-          <h4>Fast food</h4></div>
-        <div class="item"><img src="./public/assets/iteration-2/icons/6.svg"/>
-          <h4>soft drinks</h4></div>
+
+      <div class="items" style="background-color: transparent; gap: 1rem; margin-top: 1rem; margin-bottom: 1rem;">
+        <div class="item border padding-item backgroundwhite"><img src="./public/assets/iteration-2/icons/1.svg"/>
+          <h4>Ramen</h4>
+        </div>
+        <div class="item border background padding-item"><img src="./public/assets/iteration-2/icons/2.svg"/>
+          <h4 style="color: var(--text-white);">Pizza</h4>
+        </div>
+
+        <div class="item border  padding-item backgroundwhite"><img src="./public/assets/iteration-2/icons/3.svg"/>
+          <h4>Burger</h4>
+        </div>
+
+        <div class="item border  padding-item backgroundwhite"><img src="./public/assets/iteration-2/icons/4.svg"/>
+          <h4>French fries</h4>
+        </div>
+
+        <div class="item border  padding-item backgroundwhite"><img src="./public/assets/iteration-2/icons/5.svg"/>
+          <h4>Fast food</h4>
+        </div>
+
+        <div class="item border  padding-item backgroundwhite"><img src="./public/assets/iteration-2/icons/6.svg"/>
+          <h4>Soft drinks</h4>
+        </div>
       </div>
-      <div class="card">
-        <div>
+
+      <div class="Card">
+        <div class="terminalPizza backgroundwhite" style="padding: 2rem;border-radius: 1rem;">
           <img src="./public/assets/iteration-2/pictures/food-1.png"/>
           <h4>Terminal Pizaa</h4>
-          <p>4,9</p>
-          <p>(200)</p>
-          <h4>60₺</h4>
+          <div style="display: flex; justify-content: space-between;"><p>4,9</p>
+            <p>(200)</p>
+          <h4>60₺</h4></div>
         </div>
-        <div>
+
+        <div class="acıPizza backgroundwhite" style="padding: 2rem; border-radius: 1rem;">
           <img src="./public/assets/iteration-2/pictures/food-2.png"/>
-          <h4>position Absolute Pizza</h4>
-          <p>4,9</p>
-          <p>(200)</p>
-          <h4>60₺</h4>
+          <h4 style="text-align: center;">Position Absolute Pizza</h4>
+          <div style="display: flex; justify-content: space-between;"><p>4,9</p>
+            <p>(200)</p>
+          <h4>60₺</h4></div>
         </div>
-        <div>
-        <img src="./public/assets/iteration-2/pictures/food-1.png"/>
-          <h4>useEffect Tavuklu Burger</h4>
-          <p>4,9</p>
-          <p>200</p>
-          <h4>60₺</h4>
+
+        <div class="Burger backgroundwhite" style="padding: 2rem; border-radius: 1rem;">
+        <img src="./public/assets/iteration-2/pictures/food-3.png"/>
+          <h4 style="text-align: center;">useEffect Tavuklu Burger</h4>
+          <div style="display: flex; justify-content: space-between;"><p>4,9</p>
+            <p>(200)</p>
+          <h4>60₺</h4></div>
         </div>
       </div>
-        </div>
+    </div>
     
     <footer>
-      <div>
-        <h3>Teknolojik Yemekler</h3>
-        <div class="addres">
+      <div class="flex" style="justify-content: center;">
+      <div class="flex" style="flex-direction: column;">
+        <h3 style="font-size: 3rem; font-family: 'Londrina Solid'; padding-bottom: 1rem;">Teknolojik <br> Yemekler</h3>
+        <div class="flex" style="row-gap: 1rem; flex-direction: column;">
+        <div class="flex">
           <img src="./public/assets/iteration-2/footer/icons/icon-1.png">
-          <p>341 Londonderry Road,
+          <p> 341 Londonderry Road,
             Istanbul Türkiye</p>
         </div>
-        <div>
+
+        <div class="flex">
           <img src="./public/assets/iteration-2/footer/icons/icon-2.png">
-          <p>aciktim@teknolojikyemekler.com</p>
+          <p> aciktim@teknolojikyemekler.com</p>
         </div>
-        <div>
+
+        <div class="flex">
           <img src="./public/assets/iteration-2/footer/icons/icon-3.png">
-          <p>+90 216 123 45 67</p>
+          <p> +90 216 123 45 67</p>
         </div>
       </div>
-      <div>
-        <h4>Hot Menu</h4>
+    </div>
+      <div class="select flex" style="font-size: 1rem; row-gap: 1rem; flex-direction: column; padding-left: 3rem; padding-bottom: 2rem;">
+        <h4 style="padding-bottom: 1rem; padding-top: 5rem; font-size: 1.5rem;">Hot Menu</h4>
         <p>Terminal Pizza</p>
         <p>5 Kişilik Hackhathlon Pizza</p>
         <p>useEffect Tavuklu Pizza</p>
@@ -134,18 +161,31 @@
         <p>Testler Geçti Mutlu Burger</p>
         <p>Posiition Absolute Acı Burger</p>
       </div>
-      <div>
-        <h4>İnstagram</h4>
+
+      <div class="social" style="padding-left: 7rem; padding-top: 5rem; ">
+        <h4 style="font-size: 1.5rem; font-family: 'Barlow';">Instagram</h4>
+        <div class="insta flex" style="flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <div class="flex" style="row-gap: 1rem; flex-direction: column;">
         <img src="./public/assets/iteration-2/footer/insta/li-0.png"/>
         <img src="./public/assets/iteration-2/footer/insta/li-1.png"/>
+      </div>
+
+      <div class="flex" style="row-gap: 1rem; flex-direction: column;">
         <img src="./public/assets/iteration-2/footer/insta/li-2.png"/>
         <img src="./public/assets/iteration-2/footer/insta/li-3.png"/>
+      </div>
+
+      <div class="flex" style="row-gap: 1rem; flex-direction: column;">
         <img src="./public/assets/iteration-2/footer/insta/li-4.png"/>
         <img src="./public/assets/iteration-2/footer/insta/li-5.png"/>
       </div>
+    </div>
+  </div>
+</div>
       <div>
-        <p>© 2023 Teknolojik Yemekler. </p>
+        <p style="padding-left: 27rem; padding-top: 2rem; padding-bottom: 2rem; border-top: 1px solid var(--Koyu-Gri);">© 2023 Teknolojik Yemekler. </p>
       </div>
+      
     </footer>
   
   </body>
